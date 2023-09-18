@@ -12,6 +12,17 @@ if (!fs.existsSync('package.json')) {
   execSync('npm init -y');
 }
 
+try {
+  // Check if TypeScript is installed.
+  // This will throw an error if it is not.
+  execSync('npm list typescript', { stdio: 'ignore' });
+} catch (e) {
+  console.log('Installing TypeScript...');
+  execSync('npm install typescript --save-dev', {
+    stdio: 'inherit',
+  });
+}
+
 console.log('Installing Cypress...');
 execSync('npm install cypress', { stdio: 'inherit' });
 
