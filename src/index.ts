@@ -2,6 +2,7 @@
 import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';
+import appendPackageJson from './appendPackageJson';
 
 // Check if current directory is NPM project.
 if (!fs.existsSync('package.json')) {
@@ -17,3 +18,6 @@ console.log('Setting up files...');
 fs.cpSync(path.join(__dirname, '../template'), '.', {
   recursive: true,
 });
+
+console.log('Appending to package.json...');
+appendPackageJson();
