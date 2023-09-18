@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';
 import appendPackageJson from './appendPackageJson';
+import appendGitIgnore from './appendGitIgnore';
 
 // Check if current directory is NPM project.
 if (!fs.existsSync('package.json')) {
@@ -21,3 +22,6 @@ fs.cpSync(path.join(__dirname, '../template'), '.', {
 
 console.log('Appending to package.json...');
 appendPackageJson();
+
+console.log('Appending to .gitignore...');
+appendGitIgnore();
