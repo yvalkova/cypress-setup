@@ -1,0 +1,17 @@
+{
+  "name": "e2e-setup",
+  "version": "0.0.1",
+  "description": "",
+  "bin": "./dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.6.2",
+    "@types/yargs": "^17.0.24",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}
