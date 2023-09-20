@@ -1,6 +1,6 @@
 {
   "name": "@yvalkova/cypress-setup",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Opinionated Cypress setup with TypeScript and some useful utils.",
   "bin": {
     "@yvalkova/cypress-setup": "./dist/index.js"
