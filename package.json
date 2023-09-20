@@ -1,8 +1,10 @@
 {
   "name": "@yvalkova/cypress-setup",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Opinionated Cypress setup with TypeScript and some useful utils.",
-  "bin": "./dist/index.js",
+  "bin": {
+    "@yvalkova/cypress-setup": "./dist/index.js"
+  },
   "scripts": {
     "build": "tsc && cp -r template dist/template"
   },
@@ -27,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/yvalkova/cypress-setup/issues"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^13.2.0"
+  }
 }
