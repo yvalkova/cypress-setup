@@ -13,6 +13,12 @@
     "prettier": "^3.0.3",
     "typescript": "^5.2.2"
   },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "package.json",
+    "LICENSE"
+  ],
   "homepage": "https://github.com/yvalkova/cypress-setup",
   "repository": {
     "type": "git",
