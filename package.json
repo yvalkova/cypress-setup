@@ -1,17 +1,25 @@
 {
-  "name": "e2e-setup",
+  "name": "@yvalkova/cypress-setup",
   "version": "0.0.1",
-  "description": "",
+  "description": "Opinionated Cypress setup with TypeScript and some useful utils.",
   "bin": "./dist/index.js",
   "scripts": {
     "build": "tsc"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Yoanna Valkova <y.k.valkova@gmail.com>",
   "devDependencies": {
     "@types/node": "^20.6.2",
     "@types/yargs": "^17.0.24",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2"
-  }
+  },
+  "homepage": "https://github.com/yvalkova/cypress-setup",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yvalkova/cypress-setup"
+  },
+  "bugs": {
+    "url": "https://github.com/yvalkova/cypress-setup/issues"
+  },
+  "license": "MIT"
 }
